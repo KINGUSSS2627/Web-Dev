@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: #b3f8e9;
+}
+
+.top {
+    background-color: #b3f8e9;
+    height: 200px;
+    width: 200px;
+    border: 10px solid;
+    padding: 20px;
+}
+
+.middle {
+    background-color: #d3f8b3;
+    height: 200px;
+    width: 200px;
+    border: 20px solid;
+    margin: 0px 260px;
+}
+
+.bottom {
+    background-color: #a7d7f5;
+    height: 200px;
+    width: 200px;
+    border: 10px solid;
+    margin: 0px 500px;
+}
