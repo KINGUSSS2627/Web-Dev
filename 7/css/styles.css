@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: #b3f8e9;
+}
+
+.top {
+    background-color: #b3f8e9;
+}
+
+.middle {
+    background-color: #d3f8b3;
+    height: 200px;
+    width: 200px;
+}
+
+.bottom {
+    background-color: #a7d7f5;
+    height: 200px;
+    width: 200px;
+}
+
+.graduate {
+    text-decoration: underline;
+}
+
+/* to hide elements we have two things i.e display none and visibility hidden , visibility hidden keep the positon reserve but the same does not hold for display none */
