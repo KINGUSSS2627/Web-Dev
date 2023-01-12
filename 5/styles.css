@@ -1,0 +1,33 @@
+/**************** TAG Selectors**************/
+h1 {
+    color: burlywood;
+    font-size: 50px;
+}
+
+/* pseudo classes are used by using : */
+img:hover {
+    background-color: blue;
+    border-radius: 40%;
+}
+
+/**************CLASS Selectors**************/
+.bacon {
+    background-color: red;
+}
+
+.potato {
+    background-color: darkturquoise;
+}
+
+.circular {
+    border-radius: 20px;
+}
+
+/******************ID Selectors****************/
+#heading {
+    font-family: cursive;
+    font-weight: 200;
+}
+
+/* id will override tag selector as it is more specific */
+/* More then one can have same class but same doesnt hold for id on same page */
