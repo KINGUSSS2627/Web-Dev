@@ -17,6 +17,12 @@ div {
     width: 200px;
 }
 
+/* img {
+    position: relative;
+    // dont affect other element on screen
+    left: 100px;
+} */
+
 .bottom {
     background-color: #a7d7f5;
     height: 200px;

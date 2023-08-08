@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My web</title>
+    <!-- If this is placedat end it will firstgo line by line and will lod css at end  :. we place css in head -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- This is inline javascript -->
+
+<body onload="alert('Hi');">
+    <h2>Hello</h2>
+
+    <script>
+        // This in internal javascript
+        alert("Bye");
+    </script>
+    <!-- This is external javascript -->
+    <script src="script.js"></script>
+
+
+    <!-- priority order is internal -> external -> inline javascript -->
+
+    <!-- script changes action or content inside a html block :. it must be present brfore we script :. we write scropt at the end of body -->
+</body>
+
+</html>

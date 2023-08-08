@@ -1,0 +1,10 @@
+.big_change {
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: 300;
+    color: yellow;
+}
+
+.margin-10 {
+    margin: 20px;
+}

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    /* It align everything that doent have a width set */
+
+    /* Use web safe fonts so almost everyos can render it use css font stack to use fallbacks
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+    /* To ensure all viewers get same niceview use google fonts and embbed them in head */
+    font-family: 'Merriweather', serif;
+
+}
+
+/* h1 {
+    ( "The single above statement will distort our web: . we will use margin auto as below to align in horizontal center since we included width we have to recenter it")
+
+    width: 10%;
+    margin: 0 auto;
+} */
+h1 {
+    font-family: 'Sacramento', cursive;
+    margin: 2.6rem auto 0 auto;
+    color: #66BFBF;
+    /* line-height: 1.5;   it is preffered way*/
+    font-size: 5.625rem;
+    /* 100% --> 16px */
+    /* 1em --> 16px */
+    /* em is inherited from the parent i.e if body font is 2 em then here 1 em will refer to 32px same hold with % to avoid such thing we use rem  */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #66BFBF;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+div {
+    background-color: #b3f8e9;
+}
+
+.top {
+    background-color: #b3f8e9;
+    position: relative;
+    padding: 100px;
+}
+
+/* .middle {
+    background-color: #d3f8b3;
+} */
+
+/* .bottom {
+    background-color: #a7d7f5;
+} */
+
+.graduate {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.top-cloud {
+    position: absolute;
+    /* since it is child of top container we will now make it parent position relative i.e. top  */
+    left: 300px;
+    bottom: 300px;
+}
+
+.profile_photo {
+    border-radius: 50%;
+    height: 150px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.computer {
+    border-radius: 50%;
+    height: 150px;
+    /* Float is use to only wrap around the text */
+    float: left;
+    margin: 30px;
+
+    /* To remove certain part to be wrapped we can simply target it with class or id and then make it clear 
+    clear: left; */
+}
+
+.chillies {
+    border-radius: 50%;
+    height: 150px;
+    float: right;
+    margin: 30px;
+}
+
+.footer-link {
+    color: #11999E;
+}
+
+/* to hide elements we have two things i.e display none and visibility hidden , visibility hidden keep the positon reserve but the same does not hold for display none */

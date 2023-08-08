@@ -12,10 +12,10 @@ div {
     height: 200px;
     width: 200px;
     position: relative;
-    /* from natural flow of html it will divert */
-    /* It doesn't affect anythong else on screen */
     display: inline-block;
     left: 400px;
+    /* from natural flow of html it will divert */
+    /* It doesn't affect anythong else on screen */
 }
 
 .middle {
@@ -26,6 +26,12 @@ div {
     right: 200px;
     display: inline-block;
 }
+
+/* img {
+    position: relative;
+    // dont affect other element on screen
+    left: 100px;
+} */
 
 .bottom {
     background-color: #a7d7f5;

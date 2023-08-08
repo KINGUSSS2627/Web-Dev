@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    /* It align everything that doent have a width set */
+
+    /* Use web safe fonts so almost everyos can render it use css font stack to use fallbacks
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+    /* To ensure all viewers get same niceview use google fonts and embbed them in head */
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+    background-color: #b3f8e9;
+
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #eaf6f6;
+}
+
+/* h1 {
+    ( "The single above statement will distort our web: . we will use margin auto as below to align in horizontal center since we included width we have to recenter it")
+
+    width: 10%;
+    margin: 0 auto;
+} */
+h1 {
+    font-family: 'Sacramento', cursive;
+    margin: 2.6rem auto 0 auto;
+    color: #66BFBF;
+    /* line-height: 1.5;   it is preffered way*/
+    font-size: 5.625rem;
+    /* 100% --> 16px */
+    /* 1em --> 16px */
+    /* em is inherited from the parent i.e if body font is 2 em then here 1 em will refer to 32px same hold with % to avoid such thing we use rem  */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+hr {
+    border: dotted;
+    color: #695555;
+    margin: 20px auto;
+    width: 8%;
+    border-bottom: none;
+}
+
+div {
+    background-color: #b3f8e9;
+}
+
+.top {
+    background-color: #b3f8e9;
+    position: relative;
+    padding: 100px;
+}
+
+.middle {
+    background-color: #b3f8e9;
+    margin: 100px 0px 10px 0px;
+}
+
+.bottom {
+    background-color: #67bfbf;
+    height: 50px;
+    padding: 10px;
+}
+
+.graduate {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.top-cloud {
+    position: absolute;
+    /* since it is child of top container we will now make it parent position relative i.e. top  */
+    left: 300px;
+    bottom: 300px;
+}
+
+.profile_photo {
+    border-radius: 50%;
+    height: 150px;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    /* line-height: 2; */
+}
+
+.computer {
+    border-radius: 50%;
+    height: 150px;
+    /* Float is use to only wrap around the text */
+    float: left;
+    margin: 30px;
+
+    /* To remove certain part to be wrapped we can simply target it with class or id and then make it clear 
+    clear: left; */
+}
+
+.chillies {
+    border-radius: 50%;
+    height: 150px;
+    float: right;
+    margin: 30px;
+}
+
+.footer-link {
+    color: #11999E;
+}
+
+.contact-desc {
+    width: 40%;
+    margin: auto;
+}
+
+
+.btn {
+    background: #abdcfc;
+    background-image: -webkit-linear-gradient(top, #abdcfc, #8c4d4d);
+    background-image: -moz-linear-gradient(top, #abdcfc, #8c4d4d);
+    background-image: -ms-linear-gradient(top, #abdcfc, #8c4d4d);
+    background-image: -o-linear-gradient(top, #abdcfc, #8c4d4d);
+    background-image: linear-gradient(to bottom, #abdcfc, #8c4d4d);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.btn:hover {
+    background: #03ebf7;
+    background-image: -webkit-linear-gradient(top, #03ebf7, #94d675);
+    background-image: -moz-linear-gradient(top, #03ebf7, #94d675);
+    background-image: -ms-linear-gradient(top, #03ebf7, #94d675);
+    background-image: -o-linear-gradient(top, #03ebf7, #94d675);
+    background-image: linear-gradient(to bottom, #03ebf7, #94d675);
+    text-decoration: none;
+}
+
+/* to hide elements we have two things i.e display none and visibility hidden , visibility hidden keep the positon reserve but the same does not hold for display none */
+
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 10px 20px;
+}

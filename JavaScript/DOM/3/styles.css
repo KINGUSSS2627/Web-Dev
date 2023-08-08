@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#win {
+    margin-top: 25px;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+}
+
+
+#img {
+    margin-top: 300px;
+    margin-left: 580px;
+}
+
+#d1 {
+    display: inline;
+    margin-right: 200px;
+}
+
+#d2 {
+    display: inline;
+}

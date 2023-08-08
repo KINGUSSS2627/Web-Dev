@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link rel="stylesheet" href="css/styles_explore.css">
+</head>
+
+<body>
+    <div class="">
+
+    </div>
+    <script>
+        var numDivs = 10;
+        var colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff'];
+        var image = ["images/sun.jpg", "images/moon.jpg", "images/mercury.png", "images/venus.jpg", "images/earth.jpg", "images/mars.jpg", "images/jupiter.jpg", "images/saturn.jpg", "images/uranus.jpg", "images/neptune.jpg"];
+        for (var i = 0; i < numDivs; i++) {
+            var newDiv = document.createElement('div');
+            newDiv.classList.add('divs');
+            // newDiv.style.backgroundColor = colors[i];
+            var newImg = document.createElement('img');
+            newDiv.classList.add('imgs');
+            newImg.src = image[i];
+            newDiv.appendChild(newImg);
+            document.body.appendChild(newDiv);
+        }
+    </script>
+</body>
+
+</html>
