@@ -13,7 +13,8 @@ ReactDOM.render(
       <br></br>
       name is {`${name} ${lname}`}
   </div>,
-  document.getElementById('root'));
+  document.getElementById('root')
+);
 
 
 // const name = "Shreshth Gupta";

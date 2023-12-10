@@ -10,4 +10,6 @@ ReactDOM.render(
       <li>3rd item</li>
     </ul>
   </div>,
-  document.getElementById('root'));
+
+  document.getElementById('root')
+);
