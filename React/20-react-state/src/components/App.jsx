@@ -7,6 +7,14 @@ import React from "react";
 
 //     return <p style={isDone ? crossThrough : null} >Buy Milk</p>
 // }
+// function App() {
+//     var isDone = true;
+//     const crossThrough = {textDecoration : "line-through"};
+
+//     return <div>
+//         <p style={isDone ? crossThrough : null} >Buy Milk</p>
+//     </div>
+// }
 
 // Below is imparitive
 function Strike() {
@@ -16,12 +24,11 @@ function unStrike() {
     document.getElementById("root").style.textDecoration = null;
 }
 function App() {
-    var isDone = true;
-    const crossThrough = {textDecoration : "line-through"};
 
     return <div>
-        <p style={isDone ? crossThrough : null} >Buy Milk</p>
+        <p>Buy Milk</p>
         <button onClick={Strike}>Change to Strike</button>
+        <button onClick={unStrike}>Change to unStrike</button>
     </div>
 }
 
