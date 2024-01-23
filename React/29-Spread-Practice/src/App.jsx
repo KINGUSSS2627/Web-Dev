@@ -1,17 +1,19 @@
 import React from "react";
-var List = [];
 function App() {
-
-  const [click, setClick] = React.useState(false);
+  
+  const [inputText, setinputText] = React.useState("");
+  const [items, addItems] = React.useState([]);
 
   function handleChange(event){
-    click ? List.push(event.target.value) : 0;
-    setClick(false);
-    console.log(List)
+    const newValue = event.target.value;
+    setinputText(newValue);
   }
 
-  function handleClick(){
-    setClick(true);
+  function handleAdd(){
+    addItems( (prevItem) => {
+      return [...prevItem, inputText]
+    })
+    setinputText("")
   }
 
   return (
@@ -20,14 +22,14 @@ function App() {
         <h1>To-Do List</h1>
       </div>
       <div className="form">
-        <input onChange={handleChange} type="text" />
-        <button onClick={handleClick}>
+        <input onChange={handleChange} type="text" value={inputText}/>
+        <button onClick={handleAdd}>
           <span>Add</span>
         </button>
       </div>
       <div>
         <ul>
-          <li>A Item</li>
+          {items.map((item) => <li>{item}</li>)}
         </ul>
       </div>
     </div>
